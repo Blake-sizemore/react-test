@@ -1,1 +1,15 @@
-test
+testing react interface.
+
+Always remember to "npm start" inside of the created folder made by: 
+npx create-react-app "name" action
+
+# Err log: 
+'react-scripts' is not recognized as an internal or external command, operable program or batch file.
+
+Fix:
+1. npm i -g react-scripts
+2.  New error -> Error: Cannot find module 'react'
+3. fix npm i react react-dom @types/react @types/react-dom
+4. Working!
+ 
+ # 
