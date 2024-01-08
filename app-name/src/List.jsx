@@ -1,5 +1,35 @@
 import React from "react";
 
+
+const ListObj = () => {
+    
+    const groceryList = [
+        {
+            id: `custom-1`,
+            item: 'apples'
+        },
+        {
+            id: `custom-2`,
+            item: 'banana'
+        },
+        {
+            id: `custom-3`,
+            item: 'orange'
+        }
+    ];
+    
+    return (
+        <>
+            <ul>
+                {groceryList.map(val => (
+                    <li key={`${val.id}`}>{val.item}</li>
+                    ))}
+            </ul>
+        </>
+    );
+};
+export default ListObj;
+
 // const ListHard = props => {
 //     const item1 = <li key="unique-1">li item 1</li>;
 //     const item2 = <li key="unique-2">li item 2</li>;
@@ -24,35 +54,5 @@ import React from "react";
 
 // };
 // export default ListEasy;
-
-const ListObj = props => {
-
-    const groceryList = [
-        {
-            id: `custom-1`,
-            item: 'apples'
-        },
-        {
-            id: `custom-2`,
-            item: 'banana'
-        },
-        {
-            id: `custom-3`,
-            item: 'orange'
-        }
-    ];
-
-    return (
-        <>
-            <ul>
-                {groceryList.map(val => (
-                    <li key={`${val.id}`}>{val.item}</li>
-                ))}
-            </ul>
-        </>
-    );
-};
-export default ListObj;
-
 
 
